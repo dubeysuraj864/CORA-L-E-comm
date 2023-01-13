@@ -5,25 +5,27 @@ import NewArrival from "../components/NewArrival";
 import ShopBrand from "../components/ShopBrand";
 
 function Home() {
-    return ( <>
-    <div className="home">
+  return (
+    <>
+      <div className="home">
         <div>
-        <HeaderCarousel/>
+          <HeaderCarousel />
         </div>
         <div>
-            <NewArrival/>
+          <NewArrival />
         </div>
         <div>
-            <HandpickedCollections/>
+          <HandpickedCollections />
         </div>
         <div>
-            <ShopBrand/>
+          <ShopBrand />
         </div>
         <div>
-            <ImageBanner/>
+          <ImageBanner />
         </div>
-    </div>
-    </> );
+      </div>
+    </>
+  );
 }
 
 export default Home;

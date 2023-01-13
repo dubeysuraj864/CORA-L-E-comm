@@ -7,13 +7,14 @@ import Watches from "./pages/Watches.jsx";
 import Jewellery from "./pages/Jewellery.jsx";
 import SkinCare from "./pages/SkinCare.jsx";
 import Apparels from "./pages/Apparels.jsx";
+import Footer from "./components/Footer";
 
 const Home = React.lazy(() => import("./pages/Home"));
 
 function App() {
   return (
     <>
-      <div className="App overflow-hidden bg-gray-50 ">
+      <div className="App overflow-hidden bg-gray-50">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Navbar className="z-30" />}>
@@ -35,6 +36,7 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
+      <Footer />
     </>
   );
 }

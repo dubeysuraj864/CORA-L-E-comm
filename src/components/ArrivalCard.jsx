@@ -2,7 +2,7 @@ import PinkBage from "../images/pinkbag.png"
 
 function ArrivalCard() {
     return ( <>
-    <div className="arrival-card m-5 bg-white w-[250px] rounded-md shadow-md">
+    <div className="arrival-card m-2 my-10 md:m-5 bg-white w-[250px] rounded-md shadow-md">
         <div className="top">
             <img src={PinkBage} className="w-[250px] rounded-md" alt="" />
         </div>

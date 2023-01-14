@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { GrSearch, GrFavorite } from "react-icons/gr";
+import { GrSearch } from "react-icons/gr";
 import { CgProfile } from "react-icons/cg";
+import {MdOutlineFavoriteBorder} from "react-icons/md";
+
 import { BiShoppingBag } from "react-icons/bi";
 function Navbar() {
   const [show, setShow] = useState(true);
 
   return (
     <>
-      <nav className="bg-white rounded-md px-5">
+      <nav className="bg-white rounded-md px-5 text-[#1B4B66]">
         <div className="flex justify-between items-center py-4 md:mx-10">
           <div
             className="menu ml-4 flex items-center transition-all md:hidden"
@@ -79,10 +81,10 @@ function Navbar() {
           </div>
 
           <span className="Logo flex items-center">
-            <Link to="/" className="text-xl mx-1 p-2 text-[#1B4B66]">
-              <GrFavorite />
+            <Link to="/" className="text-2xl mx-1 p-2 text-[#1B4B66]">
+              <MdOutlineFavoriteBorder />
             </Link>
-            <Link to="/" className="text-xl mx-1 p-2 text-[#1B4B66]">
+            <Link to="/" className="text-2xl mx-1 p-2 text-[#1B4B66]">
               <CgProfile />
             </Link>
             <Link to="/" className="text-2xl mx-1 p-2 text-[#1B4B66]">

@@ -3,7 +3,7 @@ import fb from "../images/fb.png";
 import insta from "../images/insta.png";
 import twitter from "../images/twitter.png";
 import youtube from "../images/youtube.png";
-import {GrLocation} from "react-icons/gr";
+import {FaLocationArrow} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -45,11 +45,11 @@ function Footer() {
                 <a href="#" target="_blank" rel="noopener noreferrer"><img className=" w-[50px] m-1 p-2" src={twitter} alt="" /></a>
                 <a href="#" target="_blank" rel="noopener noreferrer"><img className=" w-[50px] m-1 p-2" src={youtube} alt="" /></a>
             </div>
-            <div className="flex m-4 text-black bg-white p-2 rounded-2xl pr-2">
-                <GrLocation className="text-2xl mr-2"/> United State
+            <div className="flex m-4 p-2 rounded-2xl pr-2">
+                <FaLocationArrow className="text-xl mr-2 text-white"/> United State
             </div>
             <div className=" mx-4">
-            © 2021 | Cora Leviene All Rights Reserved
+            © 2023 | Suraj Dubey All Rights Reserved
             </div>
           
         </div>

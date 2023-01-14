@@ -1,8 +1,8 @@
 import PinkBage from "../images/pinkbag.png"
 
 function ArrivalCard() {
-    return ( <>
-    <div className="arrival-card m-2 my-10 md:m-5 bg-white w-[250px] rounded-md shadow-md">
+    return ( <div className="">
+    <div className="arrival-card mx-2 my-10 md:my-20  bg-white w-[250px] rounded-md ">
         <div className="top">
             <img src={PinkBage} className="w-[250px] rounded-md" alt="" />
         </div>
@@ -12,7 +12,7 @@ function ArrivalCard() {
             <div className="price">$38.49</div>
         </div>
     </div>
-    </> );
+    </div> );
 }
 
 export default ArrivalCard;

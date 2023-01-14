@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NewArrival() {
   return (
     <>
-      <div className="new-arrival my-10 m-0 px-0 md:mx-5">
+      <div className="new-arrival my-10 m-0 px-0 ">
         <div className="ml-6 text-4xl font-bold flex justify-between items-center">
           <div className="">New Arrival</div>
           <div className="">
@@ -14,7 +14,7 @@ function NewArrival() {
             </Link>
           </div>
         </div>
-        <div className="flex overflow-auto scrollbar-hide">
+        <div className="flex overflow-auto scrollbar-hide md:px-5">
           <div>
             <ArrivalCard />
           </div>

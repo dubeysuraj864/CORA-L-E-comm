@@ -5,7 +5,7 @@ function ItemCard() {
   return (
     <>
       <div className="item-card ">
-      <div className=" m-2 my-10 md:m-5 bg-white w-[250px] rounded-md shadow-md">
+      <div className=" m-2 my-10 md:m-5 bg-white w-[250px] rounded-md  cursor-pointer">
         <div className="top">
             <img src={PinkBage} className="w-[250px] rounded-md" alt="" />
         </div>

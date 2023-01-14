@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-white rounded-md px-5 text-[#1B4B66]">
+      <nav className="bg-white rounded-md px-5  text-[#1B4B66]">
         <div className="flex justify-between items-center py-4 md:mx-10">
           <div
             className="menu ml-4 flex items-center transition-all md:hidden"
@@ -27,7 +27,7 @@ function Navbar() {
           <section className="fixed z-10 md:static top-0 left-0">
             {show ? (
               <>
-                <ul className="bg-[#1B4B66] w-[60vw] h-[110vh] pl-10 pt-5 transition-all text-white md:bg-transparent md:w-auto md:h-auto md:text-black md:p-0 md:flex md:items-center md:text-md">
+                <ul className="bg-[#1B4B66]  w-[60vw] h-[110vh] pl-10 pt-5 transition-all text-white md:bg-transparent md:w-auto md:h-auto md:text-black md:p-0 md:flex md:items-center md:text-md">
                   <span
                     className="menu bg-white transition-all md:hidden"
                     onClick={() => {

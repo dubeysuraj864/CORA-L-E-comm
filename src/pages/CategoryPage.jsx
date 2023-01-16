@@ -9,7 +9,7 @@ function CategoryPage() {
         <div>
           <HeaderCarousel image={CategoryHero} />
         </div>
-        <div className="flex justify-center items-start my-10">
+        <div className="flex flex-col md:flex-row justify-center items-start my-10">
             <div className="left-filter">
                 <Filter/>
             </div>

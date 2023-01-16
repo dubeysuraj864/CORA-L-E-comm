@@ -7,11 +7,11 @@ function ProductPage(props) {
   const [counter, setCounter] = useState(0);
   return (
     <>
-      <div className="product-page m-10 flex justify-center item-start">
-        <div className="left">
-          <img src={Bag} className="w-[400px] h-[400px]" alt="" />
+      <div className="product-page md-2 md:m-10 flex flex-col md:flex-row justify-center item-start">
+        <div className="left flex justify-center m-6 md:mx-6">
+          <img src={Bag} className=" w-[340px] md:w-[400px] md:h-[400px]" alt="" />
         </div>
-        <div className="right mx-10">
+        <div className="right mx-10 md:m-5">
           <div className="title text-4xl font-bold">Coach</div>
           <div className="category my-2 text-gray-500">
             Leather Coach Bag with adjustable starps.
@@ -36,7 +36,7 @@ function ProductPage(props) {
             </div>
           </div>
           <hr />
-          <div className="pin-code flex items-center my-3">
+          <div className="pin-code flex flex-col md:flex-row md:items-center my-3">
             <div className="left w-2/3 my-2 mr-4">
               <h1 className="font-bold">Delivery Details</h1>
               <h2 className="text-gray-500 text-sm">
@@ -72,12 +72,12 @@ function ProductPage(props) {
               <HiPlusSm />
             </button>
           </div>
-          <div className="add-to-cart flex">
-            <button className=" flex items-center px-10 py-3 rounded-md bg-[#1B4B66] text-white transition-all mr-4">
-              <FaShoppingCart className="mr-2"/>Add to Cart
+          <div className="add-to-cart flex mb-10">
+            <button className=" flex items-center px-7 md:px-10 py-3 rounded-md bg-[#1B4B66] text-white transition-all mr-2 md:mr-4">
+              <FaShoppingCart className="mr-2 text-2xl"/>Add to Cart
             </button>
-            <button className=" flex items-center px-10 py-3  rounded-md bg-[#1B4B66] text-white transition-all">
-              <RiMoneyDollarCircleFill className="mr-2"/>Buy Now
+            <button className=" flex items-center  px-7 md:px-10 py-3  rounded-md bg-[#1B4B66] text-white transition-all">
+              <RiMoneyDollarCircleFill className="mr-2 text-2xl"/>Buy Now
             </button>
           </div>
         </div>

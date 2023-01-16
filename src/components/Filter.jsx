@@ -1,7 +1,7 @@
 import { HiChevronRight, HiMinusSm, HiPlusSm } from "react-icons/hi";
 function Filter() {
     return (<>
-        <div className="filter m-10 pl-10 flex flex-col w-full">
+        <div className="filter md:m-10 pl-10 flex flex-col w-full">
             <div className="category flex items-center">
                 Home <HiChevronRight /> Handbag
             </div>

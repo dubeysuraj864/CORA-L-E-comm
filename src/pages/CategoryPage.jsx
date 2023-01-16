@@ -13,7 +13,7 @@ function CategoryPage() {
             <div className="left-filter">
                 <Filter/>
             </div>
-            <div className="right-items flex justify-center items-start">
+            <div className="right-items flex flex-wrap justify-center items-start">
                 <ProductLists/>
             </div>
         </div>

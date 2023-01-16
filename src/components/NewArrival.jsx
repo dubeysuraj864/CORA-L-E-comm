@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { AppProvider } from "../App";
 import ArrivalCard from "./ArrivalCard";
 import { HiChevronRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 function NewArrival() {
+  // const { arrivalItem } = useContext(AppProvider);
+  const { item } = useContext(AppProvider);
   return (
     <>
       <div className="new-arrival my-10 m-0 px-0 ">
@@ -15,28 +19,20 @@ function NewArrival() {
           </div>
         </div>
         <div className="flex overflow-auto scrollbar-hide md:px-5">
-          <div>
-            <ArrivalCard />
-          </div>
-          <div>
-            <ArrivalCard />
-          </div>
-          <div>
-            <ArrivalCard />
-          </div>
-
-          <div>
-            <ArrivalCard />
-          </div>
-          <div>
-            <ArrivalCard />
-          </div>
-          <div>
-            <ArrivalCard />
-          </div>
-          <div>
-            <ArrivalCard />
-          </div>
+          {item.map((x, key) => {
+            return (
+              <>
+                <ArrivalCard
+                  key={key}
+                  image={x.image}
+                  title={x.title}
+                  price={x.price}
+                  rating={x.rating}
+                  category={x.category}
+                />
+              </>
+            );
+          })}
         </div>
       </div>
     </>

@@ -1,7 +1,8 @@
 import Bag from "../images/pinkbag.png";
 import { useState } from "react";
-import { FaStar } from "react-icons/fa";
-import { HiChevronRight, HiMinusSm, HiPlusSm } from "react-icons/hi";
+import { FaStar, FaShoppingCart } from "react-icons/fa";
+import {RiMoneyDollarCircleFill} from "react-icons/ri"
+import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 function ProductPage(props) {
   const [counter, setCounter] = useState(0);
   return (
@@ -30,7 +31,8 @@ function ProductPage(props) {
           <div className="price flex items-center my-4">
             <div className="price-now mr-1 text-3xl font-bold ">$45.4</div>
             <div className="price-before  ">
-              $<del className="text-gray-500">69.49</del> <span className="text-red-500">50% OFF</span>
+              $<del className="text-gray-500">69.49</del>{" "}
+              <span className="text-red-500">50% OFF</span>
             </div>
           </div>
           <hr />
@@ -54,7 +56,7 @@ function ProductPage(props) {
             <span className="text-xl font-bold">Quantity:</span>{" "}
             <button
               onClick={() => {
-                setCounter(counter - 1)
+                setCounter(counter - 1);
               }}
               className="p-2 hover:shadow transition-all bg-gray-200 mx-2 rounded-full"
             >
@@ -62,16 +64,21 @@ function ProductPage(props) {
             </button>
             <span className="min-w-[20px] text-center">{counter}</span>
             <button
-               onClick={() => {
-                setCounter(counter + 1)
+              onClick={() => {
+                setCounter(counter + 1);
               }}
-            className="p-2 hover:shadow transition-all bg-gray-200 mx-2 rounded-full">
+              className="p-2 hover:shadow transition-all bg-gray-200 mx-2 rounded-full"
+            >
               <HiPlusSm />
             </button>
           </div>
-          <div className="add-to-cart">
-            <button className=" px-10 py-3 rounded-md bg-[#1B4B66] text-white transition-all mr-4">Add to Cart</button>
-            <button className=" px-10 py-3  rounded-md bg-[#1B4B66] text-white transition-all">Buy Now</button>
+          <div className="add-to-cart flex">
+            <button className=" flex items-center px-10 py-3 rounded-md bg-[#1B4B66] text-white transition-all mr-4">
+              <FaShoppingCart className="mr-2"/>Add to Cart
+            </button>
+            <button className=" flex items-center px-10 py-3  rounded-md bg-[#1B4B66] text-white transition-all">
+              <RiMoneyDollarCircleFill className="mr-2"/>Buy Now
+            </button>
           </div>
         </div>
       </div>

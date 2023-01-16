@@ -1,7 +1,7 @@
 import Bag from "../images/pinkbag.png";
 import { useState } from "react";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
-import {RiMoneyDollarCircleFill} from "react-icons/ri"
+import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 function ProductPage(props) {
   const [counter, setCounter] = useState(0);
@@ -9,7 +9,11 @@ function ProductPage(props) {
     <>
       <div className="product-page md-2 md:m-10 flex flex-col md:flex-row justify-center item-start">
         <div className="left flex justify-center m-6 md:mx-6">
-          <img src={Bag} className=" w-[340px] md:w-[400px] md:h-[400px]" alt="" />
+          <img
+            src={Bag}
+            className=" w-[340px] md:w-[400px] md:h-[400px]"
+            alt=""
+          />
         </div>
         <div className="right mx-10 md:m-5">
           <div className="title text-4xl font-bold">Coach</div>
@@ -74,10 +78,12 @@ function ProductPage(props) {
           </div>
           <div className="add-to-cart flex mb-10">
             <button className=" flex items-center px-7 md:px-10 py-3 rounded-md bg-[#1B4B66] text-white transition-all mr-2 md:mr-4">
-              <FaShoppingCart className="mr-2 text-2xl"/>Add to Cart
+              <FaShoppingCart className="mr-2 text-2xl" />
+              Add to Cart
             </button>
             <button className=" flex items-center  px-7 md:px-10 py-3  rounded-md bg-[#1B4B66] text-white transition-all">
-              <RiMoneyDollarCircleFill className="mr-2 text-2xl"/>Buy Now
+              <RiMoneyDollarCircleFill className="mr-2 text-2xl" />
+              Buy Now
             </button>
           </div>
         </div>

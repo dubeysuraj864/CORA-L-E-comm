@@ -1,4 +1,4 @@
-import { FaStar,FaShoppingCart } from "react-icons/fa";
+import { FaStar, FaShoppingCart } from "react-icons/fa";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 function ItemCard(props) {
@@ -13,9 +13,11 @@ function ItemCard(props) {
               alt=""
             />
           </div>
-          <div className="bottom p-1 py-2 md:p-2">
+          <div className="bottom p-1 py-2 md:p-2 overflow-hidden">
             <MdOutlineFavoriteBorder className=" bg-[#1B4B66] text-white w-6 h-6 p-1 rounded-full absolute top-2 md:top-1 right-2 md:right-6  text-xl cursor-pointer active:text-red-400" />
-            <div className="title text-sm">{props.title}</div>
+            <div className="title text-ellipsis text-sm inline-block whitespace-no-wrap overflow-hidden truncate w-[170px] md:w-[240px]">
+              {props.title}...
+            </div>
             <div className="type font-light text-sm my-0.5">
               {props.category}
             </div>
@@ -34,13 +36,14 @@ function ItemCard(props) {
             <div className="price flex items-center">
               <div className="price-now mr-1">${props.price}</div>
               <div className="price-before text-sm flex ">
-                $<del className="mr-2">69.49</del> <span className="text-red-500">50% OFF</span>
+                $<del className="mr-2">69.49</del>{" "}
+                <span className="text-red-500">50% OFF</span>
               </div>
             </div>
             <button className=" flex items-center px-2 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
-              <FaShoppingCart className="mr-2 text-sm"/>Add to Cart
+              <FaShoppingCart className="mr-2 text-sm" />
+              Add to Cart
             </button>
-      
           </div>
         </div>
       </div>

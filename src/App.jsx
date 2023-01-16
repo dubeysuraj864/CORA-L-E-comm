@@ -4,6 +4,7 @@ import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CategoryPage from "./pages/CategoryPage";
+import ProductPage from "./pages/ProductPage";
 const Home = React.lazy(() => import("./pages/Home"));
 
 export const AppProvider = createContext();
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
     <AppProvider.Provider value={{item:products}}>
-      <div className="App overflow-hidden bg-gray-50">
+      <div className="App overflow-hidden bg-gray-50 transition-all">
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Navbar className="z-30" />}>
@@ -37,6 +38,10 @@ function App() {
                       <Home products={products} />
                     </Suspense>
                   }
+                />
+                <Route 
+                path="/product"
+                element={<ProductPage/>}
                 />
                 <Route
                   path="/handbags"

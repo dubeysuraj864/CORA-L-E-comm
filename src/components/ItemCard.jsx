@@ -1,4 +1,4 @@
-import { FaStar, FaShoppingCart } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 function ItemCard(props) {

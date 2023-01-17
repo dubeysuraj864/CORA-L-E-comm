@@ -8,7 +8,7 @@ import { BiHomeSmile } from "react-icons/bi";
 import {
   BsHandbagFill,
   BsSmartwatch,
-  BsFillEmojiHeartEyesFill,
+ 
 } from "react-icons/bs";
 import { GiChainedHeart, GiTShirt } from "react-icons/gi";
 function Navbar() {
@@ -68,12 +68,7 @@ function Navbar() {
                       Jewellery
                     </Link>
                   </li>
-                  <li className="my-10 md:my-1 pl-2 md:mx-3">
-                    <Link className="flex items-center" to="/skincare">
-                      <BsFillEmojiHeartEyesFill className="mr-1" />
-                      SkinCare
-                    </Link>
-                  </li>
+              
                   <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/watches">
                       <BsSmartwatch className="mr-1" />

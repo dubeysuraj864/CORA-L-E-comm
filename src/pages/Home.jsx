@@ -3,7 +3,6 @@ import HeaderCarousel from "../components/HeaderCarousel";
 import ImageBanner from "../components/ImageBanner";
 import NewArrival from "../components/NewArrival";
 import ShopBrand from "../components/ShopBrand";
-import Hero from "../images/hero.png";
 
 function Home() {
   return (

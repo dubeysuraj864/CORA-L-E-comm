@@ -1,19 +1,22 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { GrSearch } from "react-icons/gr";
-import { CgProfile } from "react-icons/cg";
-import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { RiSearch2Fill } from "react-icons/ri";
+import {} from "react-icons/cg";
+import { FaShoppingCart } from "react-icons/fa";
+import { MdAccountCircle, MdFavorite } from "react-icons/md";
 import { BiHomeSmile } from "react-icons/bi";
-import { BsHandbag } from "react-icons/bs";
-import { GiGemChain, GiAllSeeingEye, GiWatch, GiTShirt } from "react-icons/gi";
-
-import { BiShoppingBag } from "react-icons/bi";
+import {
+  BsHandbagFill,
+  BsSmartwatch,
+  BsFillEmojiHeartEyesFill,
+} from "react-icons/bs";
+import { GiChainedHeart, GiTShirt } from "react-icons/gi";
 function Navbar() {
   const [show, setShow] = useState(true);
 
   return (
     <>
-      <nav className=" bg-white rounded-md px-5  ">
+      <nav className=" bg-white rounded-md px-5 shadow ">
         <div className="flex justify-between items-center py-4 md:mx-0">
           <div
             className="menu ml-4 flex items-center transition-all md:hidden"
@@ -46,7 +49,7 @@ function Navbar() {
                       CORAL'S
                     </Link>
                   </li>
-             
+
                   <li className="my-10 md:my-1 pl-2 md:mx-3 md:hidden">
                     <Link className="flex items-center" to="/">
                       {" "}
@@ -56,24 +59,24 @@ function Navbar() {
                   <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/handbags">
                       {" "}
-                      <BsHandbag className="mr-1" /> HandBags
+                      <BsHandbagFill className="mr-1" /> HandBags
                     </Link>
                   </li>
                   <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/jewellery">
-                      <GiGemChain className="mr-1" />
-                    Jewellery
+                      <GiChainedHeart className="mr-1" />
+                      Jewellery
                     </Link>
                   </li>
                   <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/skincare">
-                      <GiAllSeeingEye className="mr-1" />
+                      <BsFillEmojiHeartEyesFill className="mr-1" />
                       SkinCare
                     </Link>
                   </li>
                   <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/watches">
-                      <GiWatch className="mr-1" />
+                      <BsSmartwatch className="mr-1" />
                       Watches
                     </Link>
                   </li>
@@ -91,8 +94,8 @@ function Navbar() {
               </>
             )}
           </section>
-          <div className="md:flex justify-start items-center bg-gray-50 p-2 ml-5 rounded-md hidden md:">
-            <GrSearch />
+          <div className="md:flex justify-start items-center bg-gray-50 p-2 ml-5 rounded-md hidden border-2">
+            <RiSearch2Fill />
             <input
               placeholder="Search for products or brands....."
               className="min-w-[80px] w-[300px] bg-gray-50 outline-none pl-2"
@@ -104,13 +107,13 @@ function Navbar() {
 
           <span className="Logo flex items-center text-black">
             <Link to="/" className="text-2xl mx-1 p-2 ">
-              <MdOutlineFavoriteBorder />
+              <MdFavorite />
             </Link>
             <Link to="/" className="text-2xl mx-1 p-2 ">
-              <CgProfile />
+              <MdAccountCircle />
             </Link>
             <Link to="/" className="text-2xl mx-1 p-2 ">
-              <BiShoppingBag />
+              <FaShoppingCart />
             </Link>
           </span>
         </div>

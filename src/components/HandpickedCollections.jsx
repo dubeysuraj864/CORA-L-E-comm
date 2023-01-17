@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import HandPickedCard from "./HandPickedCard";
 import { AppProvider } from "../App";
-
+import { Link } from "react-router-dom";
 function HandpickedCollections() {
   const { item } = useContext(AppProvider);
   return (
@@ -12,7 +12,8 @@ function HandpickedCollections() {
           {item.map((x, key) => {
             return (
               <div>
-                <HandPickedCard
+                 <Link to="/product">
+                 <HandPickedCard
                   key={key}
                   image={x.image}
                   title={x.title}
@@ -20,6 +21,8 @@ function HandpickedCollections() {
                   rating={x.rating}
                   category={x.category}
                 />
+                 </Link>
+             
               </div>
             );
           })}

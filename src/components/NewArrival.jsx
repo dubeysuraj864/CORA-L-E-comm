@@ -21,15 +21,15 @@ function NewArrival() {
         <div className="flex overflow-auto scrollbar-hide md:px-5">
           {item.map((x, key) => {
             return (
-              <>
-                <ArrivalCard
-                  key={key}
-                  image={x.image}
-                  title={x.title}
-                  price={x.price}
-                  rating={x.rating}
-                  category={x.category}
-                />
+              <>    <Link to="/product"> <ArrivalCard
+              key={key}
+              image={x.image}
+              title={x.title}
+              price={x.price}
+              rating={x.rating}
+              category={x.category}
+            /></Link>
+               
               </>
             );
           })}

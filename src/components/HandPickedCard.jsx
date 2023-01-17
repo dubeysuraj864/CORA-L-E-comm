@@ -4,7 +4,7 @@ function HandPickedCard(props) {
       <div className="Handpicked-card relative w-[250px] h-fit m-4 rounded-lg ">
         <img
           src={props.image}
-          className="rounded-lg w-[250px] h-[250px] bg-white object-contain"
+          className="rounded-lg w-[250px] h-[250px] p-2 bg-white object-contain"
           alt=""
         />
         <div className="absolute bottom-2 w-fit px-4 left-2 bg-blur bg-[#1B4B66] text-white text-center rounded-xl">

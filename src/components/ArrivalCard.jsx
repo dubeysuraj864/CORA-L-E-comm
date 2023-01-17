@@ -5,7 +5,7 @@ function ArrivalCard(props) {
         <div className="top">
           <img
             src={props.image}
-            className="w-[250px] h-[250px] object-contain rounded-md"
+            className="w-[250px] h-[250px] p-2 object-contain rounded-md"
             alt=""
           />
         </div>

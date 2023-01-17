@@ -1,24 +1,62 @@
-import Bag from "../images/pinkbag.png";
 import { useState } from "react";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
 import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 function ProductPage(props) {
   const [counter, setCounter] = useState(0);
+  const [image, setImage] = useState("https://m.media-amazon.com/images/I/91v9yAPw3-L._SL1500_.jpg");
   return (
     <>
       <div className="product-page md-2 md:m-10 flex flex-col md:flex-row justify-center item-start">
-        <div className="left flex justify-center m-6 md:mx-6">
-          <img
-            src={Bag}
-            className=" w-[340px] md:w-[400px] md:h-[400px]"
-            alt=""
-          />
+        <div className="left flex md:flex-row flex-col-reverse justify-center m-6 md:mx-6">
+          <div className="multiple flex flex-row md:flex-col overflow-auto">
+            <img
+              onClick={() => {
+                setImage("https://m.media-amazon.com/images/I/71lU6IcsUcL._SL1500_.jpg");
+              }}
+              src="https://m.media-amazon.com/images/I/71lU6IcsUcL._SL1500_.jpg"
+              className=" w-[100px] h-[100px] md:w-[100px] md:h-[100px] m-1 md:m-2 cursor-pointer"
+              alt=""
+            />
+            <img
+              onClick={() => {
+                setImage("https://m.media-amazon.com/images/I/61eDXs9QFNL._SL1500_.jpg");
+              }}
+              src="https://m.media-amazon.com/images/I/61eDXs9QFNL._SL1500_.jpg"
+              className=" w-[100px] h-[100px] md:w-[100px] md:h-[100px] m-1 md:m-2 cursor-pointer"
+              alt=""
+            />
+            <img
+              onClick={() => {
+                setImage("https://m.media-amazon.com/images/I/81W0CsQf-VL._SL1500_.jpg");
+              }}
+              src="https://m.media-amazon.com/images/I/81W0CsQf-VL._SL1500_.jpg"
+              className=" w-[100px] h-[100px] md:w-[100px] md:h-[100px] m-1 md:m-2 cursor-pointer"
+              alt=""
+            />
+            <img
+              onClick={() => {
+                setImage("https://m.media-amazon.com/images/I/71dKjvLPkAL._SL1500_.jpg");
+              }}
+              src="https://m.media-amazon.com/images/I/71dKjvLPkAL._SL1500_.jpg"
+              className=" w-[100px] h-[100px] md:w-[100px] md:h-[100px]  m-1 md:m-2 cursor-pointer"
+              alt=""
+            />
+          </div>
+          <div className="single-image">
+        <img
+            
+              src={image}
+              className=" w-[340px] md:w-[420px] md:h-[420px] mx-2"
+              alt=""
+            />
         </div>
+        </div>
+     
         <div className="right mx-10 md:m-5">
-          <div className="title text-4xl font-bold">Coach</div>
-          <div className="category my-2 text-gray-500">
-            Leather Coach Bag with adjustable starps.
+          <div className="title text-4xl font-bold">Apple Watch Ultra</div>
+          <div className="category my-2 text-gray-500 max-w-[500px]">
+          [GPS + Cellular 49 mm] smart watch w/Rugged Titanium Case & Starlight Alpine Loop Large Fitness Tracker, Precision GPS, Action Button, Extra-Long BatteryLife, Brighter Retina Display
           </div>
           <div className="stars flex items-center text-orange-400 my-0.5 ">
             <span className="flex items-center mr-3 text-xl">

@@ -19,15 +19,12 @@ function App() {
   };
   useEffect(() => {
     fetchApi();
-
   }, []);
-
-
 
   return (
     <>
-    <AppProvider.Provider value={{item:products}}>
-      <div className="App overflow-hidden bg-gray-50 transition-all">
+      <AppProvider.Provider value={{ item: products }}>
+        <div className="App overflow-hidden bg-gray-100 transition-all">
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Navbar className="z-30" />}>
@@ -39,10 +36,7 @@ function App() {
                     </Suspense>
                   }
                 />
-                <Route 
-                path="/product"
-                element={<ProductPage/>}
-                />
+                <Route path="/product" element={<ProductPage />} />
                 <Route
                   path="/handbags"
                   products={products}
@@ -71,8 +65,8 @@ function App() {
               </Route>
             </Routes>
           </BrowserRouter>
-      </div>
-      <Footer />
+        </div>
+        <Footer />
       </AppProvider.Provider>
     </>
   );

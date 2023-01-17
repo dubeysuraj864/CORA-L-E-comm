@@ -40,13 +40,15 @@ function ItemCard(props) {
                 <span className="text-red-500">50% OFF</span>
               </div>
             </div>
-            <button className=" flex items-center px-2 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
+            {/* <button className=" flex items-center px-2 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
               <FaShoppingCart className="mr-2 text-sm" />
               Add to Cart
-            </button>
+            </button> */}
           </div>
         </div>
+      
       </div>
+
     </>
   );
 }

@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
+import FavItems from "./pages/FavItems";
+import Cart from "./pages/Cart";
+import Profile from "./pages/Profile";
 const Home = React.lazy(() => import("./pages/Home"));
 
 export const AppProvider = createContext();
@@ -61,6 +64,21 @@ function App() {
                   path="/apparels"
                   products={products}
                   element={<CategoryPage />}
+                />
+                    <Route
+                  path="/fav_items"
+                  products={products}
+                  element={<FavItems />}
+                />
+                     <Route
+                  path="/profile"
+                  products={products}
+                  element={<Profile/>}
+                />
+                     <Route
+                  path="/cart"
+                  products={products}
+                  element={<Cart/>}
                 />
               </Route>
             </Routes>

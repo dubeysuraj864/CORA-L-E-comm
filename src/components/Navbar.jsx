@@ -101,13 +101,13 @@ function Navbar() {
           </div>
 
           <span className="Logo flex items-center text-black">
-            <Link to="/" className="text-2xl mx-1 p-2 ">
+            <Link to="/fav_items" className="text-2xl mx-1 p-2 ">
               <MdFavorite />
             </Link>
-            <Link to="/" className="text-2xl mx-1 p-2 ">
+            <Link to="/profile" className="text-2xl mx-1 p-2 ">
               <MdAccountCircle />
             </Link>
-            <Link to="/" className="text-2xl mx-1 p-2 ">
+            <Link to="/cart" className="text-2xl mx-1 p-2 ">
               <FaShoppingCart />
             </Link>
           </span>

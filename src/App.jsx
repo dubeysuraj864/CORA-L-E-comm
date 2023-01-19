@@ -7,6 +7,7 @@ import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
 import FavItems from "./pages/FavItems";
 import Cart from "./pages/Cart";
+
 import Profile from "./pages/Profile";
 const Home = React.lazy(() => import("./pages/Home"));
 
@@ -23,6 +24,7 @@ function App() {
   useEffect(() => {
     fetchApi();
   }, []);
+
 
   return (
     <>
@@ -65,21 +67,18 @@ function App() {
                   products={products}
                   element={<CategoryPage />}
                 />
-                    <Route
+                <Route
                   path="/fav_items"
+                  
                   products={products}
-                  element={<FavItems />}
+                  element={<FavItems     />}
                 />
-                     <Route
+                <Route
                   path="/profile"
                   products={products}
-                  element={<Profile/>}
+                  element={<Profile />}
                 />
-                     <Route
-                  path="/cart"
-                  products={products}
-                  element={<Cart/>}
-                />
+                <Route path="/cart" products={products} element={<Cart />} />
               </Route>
             </Routes>
           </BrowserRouter>

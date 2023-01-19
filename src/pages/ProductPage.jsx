@@ -8,7 +8,7 @@ function ProductPage(props) {
   const [image, setImage] = useState(
     "https://m.media-amazon.com/images/I/91v9yAPw3-L._SL1500_.jpg"
   );
-  
+
   return (
     <>
       <div className="product-page md-2 md:m-10 flex flex-col md:flex-row justify-center item-start">
@@ -111,7 +111,7 @@ function ProductPage(props) {
             <span className="text-xl font-bold">Quantity:</span>{" "}
             <button
               onClick={() => {
-                (counter > 0) ? setCounter(counter - 1) : setCounter(counter - 0)
+                counter > 0 ? setCounter(counter - 1) : setCounter(counter - 0);
               }}
               className="p-2 hover:shadow transition-all bg-gray-200 mx-2 rounded-full"
             >

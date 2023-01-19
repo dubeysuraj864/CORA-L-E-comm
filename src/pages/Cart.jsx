@@ -1,12 +1,12 @@
 function Cart() {
   return (
     <>
-          <h1 className="text-[#1B4B66] text-center my-4  text-2xl font-bold bottom-border">My Cart</h1>
+          <h1 className="text-[#1B4B66] text-left ml-[6%] my-4  text-2xl font-bold bottom-border">My Cart</h1>
       <div className="cart m-6 p-4 flex flex-col lg:flex-row items-center lg:items-start justify-center md:justify-around ">
   
         <div className="left items-start">
           
-          <table class="table-auto border-spacing-6 border-separate">
+          <table class="table-auto border-spacing-6 border-separate bg-white">
             <thead className="">
               <tr className="text-left">
                 <th>Product Name</th>
@@ -68,7 +68,7 @@ function Cart() {
           
         </div>
         <div className="right order-summary">
-            <table class="table-auto border-spacing-4 border-separate text-left ">
+            <table class="table-auto border-spacing-4 border-separate text-left bg-white">
               <h1 className="text-lg pb-4 font-bold">Order Summary</h1>
               <hr />
               <tbody className="text-[#626262]">

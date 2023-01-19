@@ -1,10 +1,22 @@
-import { FaStar } from "react-icons/fa";
-import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { FaStar, FaShoppingCart } from "react-icons/fa";
+import { MdOutlineFavorite } from "react-icons/md";
+import { useState } from "react";
 
 function ItemCard(props) {
+  const [isActive, setIsActive] = useState(false);
   return (
     <>
       <div className="item-card relative">
+        <MdOutlineFavorite
+          className="   active:text-white z-10 mt-6 md:m-2 bg-[#1B4B66] text-white w-6 h-6 p-1 rounded-full absolute top-2 md:top-4 right-4 -md:right-6  text-sm cursor-pointer  hover:bg-red-500 focus focus:bg-red-500 active:bg-red-500 and active"
+          style={{
+            backgroundColor: isActive ? "red" : "",
+            color: isActive ? "white" : "",
+          }}
+          onClick={() => {
+            setIsActive((key) => !key);
+          }}
+        />
         <div className=" m-0 my-10 md:m-5 w-[180px] bg-white md:w-[250px] rounded-md  cursor-pointer">
           <div className="top">
             <img
@@ -14,7 +26,6 @@ function ItemCard(props) {
             />
           </div>
           <div className="bottom p-1 py-2 md:p-2 overflow-hidden">
-            <MdOutlineFavoriteBorder className=" bg-[#1B4B66] text-white w-6 h-6 p-1 rounded-full absolute top-2 md:top-1 right-2 md:right-6  text-xl cursor-pointer active:text-red-400" />
             <div className="title text-ellipsis text-sm inline-block whitespace-no-wrap overflow-hidden truncate w-[170px] md:w-[240px]">
               {props.title}...
             </div>
@@ -40,15 +51,13 @@ function ItemCard(props) {
                 <span className="text-red-500">50% OFF</span>
               </div>
             </div>
-            {/* <button className=" flex items-center px-2 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
+            <button className=" flex items-center px-2 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
               <FaShoppingCart className="mr-2 text-sm" />
               Add to Cart
-            </button> */}
+            </button>
           </div>
         </div>
-      
       </div>
-
     </>
   );
 }

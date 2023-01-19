@@ -1,10 +1,11 @@
-import { HiChevronRight, HiMinusSm, HiPlusSm } from "react-icons/hi";
-function Filter() {
+import {  HiMinusSm, HiPlusSm } from "react-icons/hi";
+import { Link } from "react-router-dom";
+function Filter(props) {
   return (
     <>
       <div className="filter md:m-10 pl-10 flex flex-col w-full">
-        <div className="category flex items-center">
-          Home <HiChevronRight /> Handbag
+        <div className="category flex items-center  bg-white p-2 rounded-lg">
+          <Link to="/">Home</Link> {props.page}
         </div>
         <div className="category-name text-2xl font-medium my-2">Handbags</div>
         <div className="flex justify-between items-center">

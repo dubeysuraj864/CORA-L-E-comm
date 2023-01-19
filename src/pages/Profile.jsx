@@ -15,7 +15,7 @@ function Profile() {
           </div>
           <div className="right w-[400px] h-[400px] bg-transparent md:bg-white flex justify-center items-start rounded-r-2xl backdrop-blur-md">
             <form className=" flex flex-col justify-center items-center text-black z-10 ">
-              <h1 className="text-3xl font-bold md:text-[#1B4B66] text-white my-8">
+              <h1 className="text-3xl font-bold md:text-[#349ad5] text-white my-6">
                 Good to see you again
               </h1>
               <h1 className="text-2xl font-bold text-white md:text-black">
@@ -25,7 +25,7 @@ function Profile() {
                 <RiUser6Fill className="text-white"/>
                 <input
                   type="text"
-                  className=" ml-2 p-1 bg-[#F1F1F1]  outline-none min-w-[220px] rounded-r-md"
+                  className=" ml-2 p-2 bg-[#F1F1F1]  outline-none min-w-[220px] rounded-r-md"
                   placeholder="Username..."
                 />
               </div>
@@ -33,12 +33,12 @@ function Profile() {
               <RiLockPasswordFill className="text-white"/>
                 <input
                   type="password"
-                  className=" ml-2 p-1 bg-[#F1F1F1] outline-none min-w-[220px] rounded-r-md"
+                  className=" ml-2 p-2 bg-[#F1F1F1] outline-none min-w-[220px] rounded-r-md"
                   placeholder="Password..."
                 />
               </div>
         
-              <button className="bg-[#1B4B66] flex justify-center p-1.5 w-[200px] text-white rounded-md my-6">
+              <button className="bg-[#1B4B66] border flex justify-center p-1.5 w-[200px] hover:bg-white hover:border hover:text-black transition-all text-white rounded-md my-6">
                 Sign In
               </button>
               <div className="text-white md:text-black text-sm">

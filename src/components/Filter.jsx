@@ -1,4 +1,4 @@
-import {  HiMinusSm, HiPlusSm } from "react-icons/hi";
+import { HiMinusSm, HiPlusSm } from "react-icons/hi";
 import { Link } from "react-router-dom";
 function Filter(props) {
   return (

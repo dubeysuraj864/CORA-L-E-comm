@@ -5,12 +5,7 @@ import {} from "react-icons/cg";
 import { FaShoppingCart } from "react-icons/fa";
 import { MdAccountCircle, MdFavorite } from "react-icons/md";
 import { BiHomeSmile } from "react-icons/bi";
-import {
-  BsHandbagFill,
-  BsSmartwatch,
- 
-} from "react-icons/bs";
-import { GiChainedHeart, GiTShirt } from "react-icons/gi";
+import { BsHandbagFill } from "react-icons/bs";
 function Navbar() {
   const [show, setShow] = useState(true);
 
@@ -62,13 +57,13 @@ function Navbar() {
                       <BsHandbagFill className="mr-1" /> HandBags
                     </Link>
                   </li>
-                  <li className="my-10 md:my-1 pl-2 md:mx-3">
+                  {/* <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/jewellery">
                       <GiChainedHeart className="mr-1" />
                       Jewellery
                     </Link>
                   </li>
-              
+
                   <li className="my-10 md:my-1 pl-2 md:mx-3">
                     <Link className="flex items-center" to="/watches">
                       <BsSmartwatch className="mr-1" />
@@ -80,7 +75,7 @@ function Navbar() {
                       <GiTShirt className="mr-1" />
                       Apparels
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </>
             ) : (

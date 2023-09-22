@@ -12,17 +12,16 @@ function HandpickedCollections() {
           {item.map((x, key) => {
             return (
               <div>
-                 <Link to="/product">
-                 <HandPickedCard
-                  key={key}
-                  image={x.image}
-                  title={x.title}
-                  price={x.price}
-                  rating={x.rating}
-                  category={x.category}
-                />
-                 </Link>
-             
+                <Link to={`/product/${x.id}`}>
+                  <HandPickedCard
+                    key={key}
+                    image={x.image}
+                    title={x.title}
+                    price={x.price}
+                    rating={x.rating}
+                    category={x.category}
+                  />
+                </Link>
               </div>
             );
           })}

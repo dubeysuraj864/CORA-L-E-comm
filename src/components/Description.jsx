@@ -36,7 +36,9 @@ function Description() {
             </span>
           </section>
         </div>
-        <p className="my-5 px-2 text-justify leading-7 text-[#626262] text-sm">{para}</p>
+        <p className="my-5 px-2 text-justify leading-7 text-[#626262] text-sm">
+          {para}
+        </p>
       </div>
     </>
   );

@@ -8,22 +8,22 @@ function HeaderCarousel(props) {
           className="w-[100vw] md:h-[400px] h-[200px] object-cover mx-2 md:mx-4 rounded-lg"
           alt=""
         />
-              <img
+        <img
           src={props.image}
           className="w-[100vw] md:h-[400px] h-[200px] object-cover mx-2 md:mx-4 rounded-lg"
           alt=""
         />
-              <img
+        <img
           src={props.image}
           className="w-[100vw] md:h-[400px] h-[200px] object-cover mx-2 md:mx-4 rounded-lg"
           alt=""
         />
-              <img
+        <img
           src={props.image}
           className="w-[100vw] md:h-[400px] h-[200px] object-cover mx-2 md:mx-4 rounded-lg"
           alt=""
         />
-              <img
+        <img
           src={props.image}
           className="w-[100vw] md:h-[400px] h-[200px] object-cover mx-2 md:mx-4 rounded-lg"
           alt=""

@@ -5,10 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CategoryPage from "./pages/CategoryPage";
 import ProductPage from "./pages/ProductPage";
-import FavItems from "./pages/FavItems";
 import Cart from "./pages/Cart";
-
-import Profile from "./pages/Profile";
 const Home = React.lazy(() => import("./pages/Home"));
 
 export const AppProvider = createContext();
@@ -25,7 +22,6 @@ function App() {
     fetchApi();
   }, []);
 
-
   return (
     <>
       <AppProvider.Provider value={{ item: products }}>
@@ -41,13 +37,16 @@ function App() {
                     </Suspense>
                   }
                 />
-                <Route path="/product" element={<ProductPage />} />
+                <Route
+                  path="/product/:id"
+                  element={<ProductPage data={products} />}
+                />
                 <Route
                   path="/handbags"
                   products={products}
                   element={<CategoryPage />}
                 />
-                <Route
+                {/* <Route
                   path="/jewellery"
                   products={products}
                   element={<CategoryPage />}
@@ -69,15 +68,14 @@ function App() {
                 />
                 <Route
                   path="/fav_items"
-                  
                   products={products}
-                  element={<FavItems     />}
+                  element={<FavItems />}
                 />
                 <Route
                   path="/profile"
                   products={products}
                   element={<Profile />}
-                />
+                /> */}
                 <Route path="/cart" products={products} element={<Cart />} />
               </Route>
             </Routes>

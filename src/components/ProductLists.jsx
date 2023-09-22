@@ -1,10 +1,9 @@
 import ItemCard from "./ItemCard";
 import { useContext } from "react";
 import { AppProvider } from "../App";
+import { Link } from "react-router-dom";
 
 function ProductLists() {
- 
-
   const { item } = useContext(AppProvider);
   console.log(item);
   return (
@@ -12,8 +11,7 @@ function ProductLists() {
       {item.map((x, key) => {
         return (
           <div className="relative product-lists m-1 md:m-5 flex flex-wrap  ">
-       
-            {/* <Link to="/product" class=""> */}
+            <Link to={`/product/${x.id}`} className="">
               <ItemCard
                 key={x.id}
                 image={x.image}
@@ -22,7 +20,7 @@ function ProductLists() {
                 rating={x.rating}
                 category={x.category}
               />
-            {/* </Link> */}
+            </Link>
           </div>
         );
       })}

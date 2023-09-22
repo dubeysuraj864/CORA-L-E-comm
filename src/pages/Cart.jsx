@@ -1,11 +1,11 @@
 function Cart() {
   return (
     <>
-          <h1 className="text-[#1B4B66] text-left ml-[6%] my-4  text-2xl font-bold bottom-border">My Cart</h1>
+      <h1 className="text-[#1B4B66] text-left ml-[6%] my-4  text-2xl font-bold bottom-border">
+        My Cart
+      </h1>
       <div className="cart m-6 p-4 flex flex-col lg:flex-row items-center lg:items-start justify-center md:justify-around ">
-  
         <div className="left items-start">
-          
           <table class="table-auto border-spacing-6 border-separate bg-white">
             <thead className="">
               <tr className="text-left">
@@ -64,43 +64,41 @@ function Cart() {
               </tr>
             </tbody>
           </table>
-
-          
         </div>
         <div className="right order-summary">
-            <table class="table-auto border-spacing-4 border-separate text-left bg-white">
-              <h1 className="text-lg pb-4 font-bold">Order Summary</h1>
-              <hr />
-              <tbody className="text-[#626262]">
-                <tr>
-                  <td >Sub Total</td>
-                  <td>$716.1</td>
-                </tr>
-                <tr>
-                  <td >Discount</td>
-                  <td>-$33.40</td>
-                </tr>
-                <tr>
-                  <td >Delivery Fee</td>
-                  <td>-$0.00</td>
-                </tr>
-                <tr>
-                  <td className="font-bold text-black" >Grand Total</td>
-                  <td className="font-bold text-black">$106.29</td>
-                </tr>
-                <tr>
-                  <td className="flex">
-                    <button className=" flex items-center px-6 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
-                      Place Order
-                    </button>{" "}
-                    <button className=" flex items-center px-6 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
-                      Continue Shopping
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <table class="table-auto border-spacing-4 border-separate text-left bg-white">
+            <h1 className="text-lg pb-4 font-bold">Order Summary</h1>
+            <hr />
+            <tbody className="text-[#626262]">
+              <tr>
+                <td>Sub Total</td>
+                <td>$716.1</td>
+              </tr>
+              <tr>
+                <td>Discount</td>
+                <td>-$33.40</td>
+              </tr>
+              <tr>
+                <td>Delivery Fee</td>
+                <td>-$0.00</td>
+              </tr>
+              <tr>
+                <td className="font-bold text-black">Grand Total</td>
+                <td className="font-bold text-black">$106.29</td>
+              </tr>
+              <tr>
+                <td className="flex">
+                  <button className=" flex items-center px-6 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
+                    Place Order
+                  </button>{" "}
+                  <button className=" flex items-center px-6 py-2 my-2 rounded-md hover:bg-[#639599] bg-[#1B4B66] text-white transition-all mr-2 md:mr-4 text-sm">
+                    Continue Shopping
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );
